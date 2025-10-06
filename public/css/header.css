@@ -1,0 +1,1601 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffffff;
+    /* Background color */
+    padding: 10px;
+    /* Padding around the whole header */
+    padding-left: 50px;
+}
+
+.header img {
+    width: 8%;
+    /* Adjust the image size */
+}
+
+.language-select {
+    background-color: #0f3c4d;
+    padding: 10px 50px 0 0;
+    height: 50px;
+    letter-spacing: 0.5px;
+    font-family: "Open Sans", system-ui;
+    font-weight: 400;
+    text-align: right;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.language-select label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.language-select select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.language-select select:hover {
+    border-color: #888;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .language-select {
+        top: 5px;
+        right: 10px;
+        font-size: 13px;
+    }
+
+    .language-select label {
+        margin-right: 5px;
+    }
+
+    .language-select select {
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .language-select {
+        top: 5px;
+        right: 5px;
+        font-size: 12px;
+    }
+
+    .language-select label {
+        display: none;
+        /* Hide the label on very small screens to save space */
+    }
+
+    .language-select select {
+        padding: 3px;
+    }
+}
+
+/* Navbar Styles */
+.custom-nav {
+    background-color: #0f3c4d;
+    /* Darker green background for navbar */
+    /* color: white; */
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-family: "Open Sans", system-ui;
+    font-weight: 600;
+    padding: 0;
+    /* Remove padding */
+    height: 60px;
+    /* Fixed height */
+    line-height: 60px;
+    /* Align text vertically */
+}
+
+.navbar-nav {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    margin: auto;
+    gap: 20px;
+    /* flex-grow: 1; */
+    
+    /* padding: 0px; */
+}
+
+/* Style links within the navbar */
+.navbar-nav a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    padding: 0;
+    height: 100%;
+    /* box-sizing: border-box; */
+    transition: background-color 0.3s ease;
+    /* Smooth transition effect */
+}
+
+/* Hover effect for all nav links */
+.navbar-nav a:hover,
+.nav-link.active {
+    background-color: #247c96;
+    /* Background color on hover and active */
+    color: #ffffff !important;
+    /* Ensuring the text color remains white */
+}
+
+.dropdown-menu {
+    background-color: #0f3c4d;
+    border-radius: 0%;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu.show {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #247c96;
+    padding: 0;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* For devices smaller than 768px */
+    .custom-size {
+        font-size: 22px;
+        /* Adjust size for smaller screens */
+        padding: 8px;
+        /* Adjust padding */
+    }
+}
+
+/* end nav  */
+/* home section  */
+.abt-container {
+    text-align: justify;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    font-family: "Open Sans", system-ui;
+    font-weight: 400;
+    font-size: large;
+    background-color: #f7f7f7;
+    /* font-style: normal; */
+}
+
+body,
+.img_slider {
+    margin: 0 !important; /* Remove default margin */
+    padding: 0; /* Remove default padding if needed */
+}
+
+.carousel-inner img {
+    width: auto;
+    /* height: auto ; */
+    height: calc(80vh - 70px);
+    min-height: 250px; /* or keep it at 240.398px if precision is important */
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+/* Container for aligning .abt-img and .intro side by side */
+.abt-container {
+    width: 100%; /* Ensure the container takes up the full width of its parent */
+    /* margin: 0 auto;  */
+    /* Center the container horizontally */
+    display: flex; /* Use Flexbox for side-by-side alignment */
+    align-items: flex-start; /* Align items to the top */
+    box-sizing: border-box; /* Include padding in the container's width calculation */
+    /* padding removed for no extra space around container */
+}
+
+/* Ensure .abt-img takes up space on the left */
+.abt-img {
+    /* flex: 1;  */
+    /* Allow this section to take up space on the left */
+    padding: 50px;
+    /* Add padding around the content */
+    margin-left: 60px;
+    margin-top: 90px;
+}
+
+/* Styling for heading in the .abt-img section */
+.abt-img h2 {
+    font-size: 45px; /* Adjust the font size */
+    /* Space below the heading */
+    line-height: 52px;
+    font-style: normal;
+    color: #524f4f;
+    font-weight: 400;
+}
+
+.abt-img h4 {
+    font-size: 35px; /* Adjust the font size */
+    /* Space below the heading */
+    line-height: 35px;
+    color: #a29b9b;
+    font-style: normal;
+    font-weight: 350;
+}
+
+/* Ensure .intro takes up space on the right */
+.intro {
+    flex: 2; /* Allow this section to take up more space on the right */
+    padding: 50px; /* Add padding around the content */
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+/* Styling for the intro section lists */
+.intro ul {
+    margin-top: 10px; /* Add space above the list */
+    padding-left: 20px; /* Add indentation for the list */
+}
+
+.readmore {
+    text-decoration: none;
+    padding: 0.4rem;
+    border: 1px solid #1e1e1e;
+    color: rgb(0, 0, 0);
+    background-color: #c0cbd6;
+    border-radius: 8px;
+}
+.readmore:hover {
+    text-decoration: none;
+
+    color: white;
+    background-color: #989ca0;
+}
+
+/* Remove default margins from body or container if necessary */
+body,
+.abt-container {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding if needed */
+}
+
+/* Mediaquery */
+
+/* Responsive Navbar Styles */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Stack the nav items vertically */
+        text-align: center; /* Center the items */
+        width: 100%; /* Make the navbar full width */
+    }
+
+    .navbar-nav a {
+        padding: 10px 0; /* Add padding for touch targets */
+    }
+
+    .header img {
+        width: 60%; /* Adjust image size for smaller screens */
+    }
+
+    .abt-container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Adjust padding for mobile */
+    }
+
+    .abt-img,
+    .intro {
+        margin: 0; /* Reset margin */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .abt-img h2 {
+        font-size: 36px; /* Responsive font size */
+    }
+
+    .abt-img h4 {
+        font-size: 28px; /* Responsive font size */
+    }
+}
+
+/* Further adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .navbar-nav {
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .header img {
+        width: 80%; /* Further adjust image size */
+    }
+
+    .abt-container {
+        padding: 10px; /* Less padding on very small screens */
+    }
+
+    .abt-img h2 {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    .abt-img h4 {
+        font-size: 24px; /* Smaller font size */
+    }
+}
+
+/* Mediaquery */
+
+/* end of home section */
+
+/* Data Section */
+.data-heading h1 {
+    padding-left: 75px;
+    padding-top: 25px;
+}
+
+.data-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 60px 50px 60px;
+    /* Remove the gap here to prevent extra space between divs */
+}
+
+.data-item {
+    background-color: #f7fcff;
+    /* padding: 20px; */
+    margin: 18px; /* Provides spacing around the div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 1 1 30%;
+    /* max-width: 30%; */
+}
+
+.data-item img {
+    width: 100%; /* Ensures the image fills the div */
+    height: auto;
+}
+
+.data-item h2 {
+    padding: 20px 0 15px 20px;
+    /* margin: 15px 0; */
+    font-size: 1.5rem;
+}
+
+.data-links {
+    padding: 0 0 25px 25px;
+    display: flex;
+    flex-direction: column; /* Arranges the links in a column */
+}
+
+.data-links a {
+    margin-bottom: 10px; /* Adds space between links */
+    color: #1430d0;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+.data-links a:hover {
+    text-decoration: underline;
+    color: #1430d0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .data-item {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .data-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* end of Data Section */
+
+/* Questions Section */
+
+.study-intro {
+    font-size: 1.125rem; /* Using relative units for better scaling */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.study-questions {
+    margin-left: 1.25rem;
+    padding-left: 0.625rem;
+    font-size: 1rem; /* Using relative units */
+    line-height: 1.6;
+}
+
+.study-questions li {
+    margin-bottom: 0.5rem;
+}
+
+/* Media query for smaller devices (like phones) */
+@media (max-width: 600px) {
+    .study-intro {
+        font-size: 1rem; /* Slightly smaller font on small screens */
+    }
+
+    .study-questions {
+        margin-left: 0.75rem;
+        padding-left: 0.5rem;
+        font-size: 0.875rem; /* Reduce font size for readability on smaller screens */
+    }
+}
+
+/* End Questions Section */
+
+/* Datas  */
+/* CodeBook */
+
+.codebook-container,
+.data-container {
+    max-width: 800px; /* Set a maximum width for larger screens */
+    width: 90%; /* Set width to 90% for smaller screens */
+    margin: 20px auto 30px auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.codebook-container a {
+    /* Remove underline */
+    color: #004997; /* Link color */
+    font-size: 1.125rem; /* Font size for links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.codebook-container a:hover {
+    color: #41a0ff; /* Darker shade for hover effect */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .codebook-container a {
+        font-size: 1rem; /* Adjust font size for links */
+    }
+
+    .codebook-container {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* End CodeBook */
+
+/* Publication section */
+
+.publications-container {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: align;
+    /* align-items: center; */
+    padding: 50px 100px 60px 130px;
+}
+
+.publication-header{
+    padding-top:40px;
+}
+
+.publications-content {
+    display: flex;
+    flex-direction: column;
+    padding-left:50px;
+}
+
+.publication-item {
+    width: 90%;  
+}
+
+.citation-buttons {
+    padding-bottom:30px;
+}
+
+.citation-buttons a {
+    text-decoration: none;
+}
+
+.citation-buttons button {
+    background-color: white;
+    color: #007bff;
+    border: 0.5px solid #007bff;
+    padding: 2px 8px;
+    /* margin-right: 5px; */
+    border-radius: 7px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.citation-buttons button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.pagination-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.publication-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+.publication-details{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.publication-details a:hover {
+    text-decoration: underline;
+}
+
+/* ---------Citation alert box------------ */
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* ---------Citation alert box------------ */
+
+
+/* Responsive Media Queries */
+
+/* Styles for tablets and below */
+@media screen and (max-width: 768px) {
+    .publications-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .publication-header {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .publications-content {
+        width: 100%; /* Full width for content */
+    }
+
+    .publication-item {
+        width: 95%; /* Slightly less than full width for items */
+    }
+
+    .citation-buttons button {
+        padding: 8px 12px; /* Adjust padding for touch targets */
+        font-size: 14px; /* Responsive font size for buttons */
+    }
+
+
+}
+
+/* Further adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .publications-container {
+        padding: 5px; /* Less padding on very small screens */
+    }
+
+    .publication-header {
+        font-size: 20px; /* Smaller font size for header */
+    }
+
+    .publication-item {
+        width: 100%; /* Full width for items on very small screens */
+    }
+
+    .citation-buttons button {
+        font-size: 12px; /* Smaller font size for buttons */
+        padding: 5px 10px; /* Less padding */
+    }
+}
+
+/* End of Publication section */
+
+/* About Section */
+
+.container {
+    max-width: 1180px; /* Adjust max-width for better responsiveness */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 25px;  
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 40px;
+}
+
+.carousel img {
+    width: 50%; /* Ensure responsive width */
+    height: auto;
+}
+
+.second-para{
+    padding-top: 10px;
+}
+
+.fa-external-link {
+    font-size: 0.75em; /* Adjusted font size */
+    vertical-align: top;
+    padding-right: 5px;
+    padding-top: 3px;
+}
+
+.timeline {
+    padding: 20px; /* Adjusted padding */
+    background-color: #f1f2f4;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    font-size: 16px; /* Adjusted font size for better readability */
+    
+}
+#flex-content {
+    display: flex;
+    justify-content: space-between; /* Creates space between content and important links */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Adds space between the two sections */
+    
+  }
+  
+  .content {
+    flex: 1; /* Ensures both sections take up equal space */
+  }
+  
+  
+  .timeline h3 {
+    color: #000000; /* Example color for headings */
+  }
+  
+  .timeline p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .data-links {
+    display: flex;                 /* Enable flexbox for the container */
+    flex-direction: column;       /* Stack the heading above the dl elements */
+    
+}
+
+.dl-container {
+    display: flex;                /* Enable flexbox for the dl elements */
+    justify-content: space-between; /* Space out the dl elements evenly */
+    align-items: flex-start;      /* Align items to the top */
+    gap: 10px;                   /* Space between dl elements */
+    
+}
+
+.data-links dl {
+    flex: 1;                     /* Make each dl element take equal space */
+    margin: 0;                  /* Remove default margin */
+    border: 1px solid #ccc;     /* Optional: add border for visibility */
+    padding: 10px;              /* Optional: add padding for aesthetics */
+    background-color: #ffffff;
+}
+.data-links dt{
+    color: #400a0a;
+    padding-bottom: 7px;
+}
+
+
+.study-content {
+    float: left;
+    /* Adjust width as needed for the content section */
+    padding: 0 100px 30px 100px;
+    
+}
+.study-content h3{
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.study-content ul{
+    padding-left: 40px;
+    padding-top: 10px;
+    gap:20px;
+}
+
+.study-section {
+    overflow: auto; /* Clears floats inside the container */
+    width: 100%; 
+}
+
+.study-img {
+    float: right;
+    width: 45%; 
+    padding-left: 20px;
+    /* Adjust width as needed for the image section */
+    
+}
+
+.study-img img {
+    width: 100%; 
+    /* Ensures the image fits within the container */
+    height: auto;
+}
+
+
+
+/* end of about section */
+
+/* start Researchers section */
+.research-body {
+    margin: 40px;
+    font-family: "Open Sans", system-ui;
+}
+
+.research-body h1 {
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 40px; /* Added px unit */
+    margin-bottom: 20px;
+}
+
+.research-team h2 {
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+    font-size: 20px; /* Added px unit */
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.research-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    margin-bottom: 20px;
+}
+
+.research-member {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 20px; /* Adds space between elements */
+}
+
+.polaroid {
+    text-align: center; /* Center-aligns text under the image */
+    margin-bottom: 25px;
+}
+
+.polaroid img {
+    border-radius: 50%;
+    padding: 10px; /* Adjusted padding */
+    /* object-fit: cover; */
+    width: 150px;
+    height: 150px;
+}
+
+.container-txt {
+    text-align: center; /* Ensures text is centered */
+    padding: 10px;
+}
+.container-txt a {
+    color: #1246d7;
+    font-size: 20px;
+}
+
+.container-txt p:last-child {
+    font-size: 14px;
+    color: #555; /* Light gray for description text */
+    margin-top: 4px;
+}
+
+/* end Researcher section */
+
+/* Staff Section */
+
+.staff-page h1 {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.staff-list {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+    padding: 30px 60px 50px 60px; /* Add padding around the staff list */
+    gap: 25px; /* Add space between staff items */
+}
+
+.staff-item {
+    background-color: #f0ebeb; /* Light background color for each item */
+    /* Padding inside each item */
+    text-align: center; /* Center text within items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    flex: 1 1 22%; /* Flex properties to allow growth and shrink */
+    max-width: 15%; /* Maximum width of each staff item */
+    max-height:fit-content;
+}
+
+.staff-item img {
+    width: 100%; /* Image fills the width of the item */
+    height: 60%; /* Maintain aspect ratio */
+    /* Make images circular */
+}
+
+.staff-item h3 {
+    margin: 15px 0 10px; /* Margins around the heading */
+    font-size: 1.1rem; /* Font size for the name */
+}
+
+.staff-item p {
+    font-size: 0.9rem; /* Font size for the role */
+    color: #555; /* Color for the role text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .staff-item {
+        flex: 1 1 45%; /* Adjust width for medium screens */
+        max-width: 45%; /* Maximum width for medium screens */
+    }
+    .staff-item h3 {
+        font-size: 1.1rem; /* Smaller font size for medium screens */
+    }
+    .staff-item p {
+        font-size: 0.9rem; /* Smaller font size for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .staff-item {
+        flex: 1 1 100%; /* Stack items vertically on small screens */
+        max-width: 100%; /* Maximum width for mobile screens */
+    }
+    .staff-item h3 {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+    .staff-item p {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+}
+
+/* End of Staff Section */
+
+
+/* Capacity building Section */
+
+/* Styling for the image gallery */
+.cursor-gallery {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px; /* Adds gap to the left of the images */
+}
+
+.cursor-gallery img {
+    width: 100%;
+    height: auto;
+    display: none; /* Images are hidden by default */
+    transition: opacity 1s ease-in-out;
+    
+}
+
+.cursor-gallery img:first-child {
+    display: block; /* First image is displayed by default */
+}
+
+/* Ensures that images have rounded corners */
+.cursor-gallery img.rounded {
+    border-radius: 8px;
+}
+
+
+
+/* End of Capacity building Section */
+
+
+
+/* Gallery section  */
+
+/* Gallery, Git, and PI Visit Layout */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;  /* Add space between sections */
+    margin: 20px;  /* Margin around the entire container */
+}
+
+/* Centralize section titles */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;  /* Space between header and images */
+}
+
+/* Gallery Styles */
+.gallery {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;  /* Space between gallery and next section */
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-slider img {
+    width: calc(50% - 10px);  /* Show 3 images at a time with margin */
+    margin-right: 15px;  /* Space between images */
+    object-fit: cover;
+    height: 450px;
+}
+
+/* Static Git Section */
+.git, .pi-visit {
+    margin-top: 10px;
+}
+
+/* Image Section Styles */
+.img-section {
+    /* margin-top: 10px; */
+    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
+    margin:0 30px 0 30px;
+
+}
+
+.img-section img {
+    width: calc(50% - 10px);  /* Set image size with margin */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .img-section img {
+        width: calc(48% - 10px);  /* Two images per row */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img-section img {
+        width: 100%;  /* One image per row */
+        height: auto;  /* Adjust height to maintain aspect ratio */
+    }
+
+    .gallery-slider img {
+        height: 250px;  /* Slightly smaller gallery images on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-container {
+        margin: 10px;  /* Reduced margin for smaller screens */
+    }
+
+    .section-title {
+        font-size: 18px;  /* Smaller text for smaller screens */
+    }
+
+    .img-section {
+        flex-direction: column;  /* Stack images vertically */
+    }
+
+    .img-section img {
+        width: 100%;  /* One image per row */
+        height: auto;  /* Adjust height to maintain aspect ratio */
+    }
+}
+
+
+
+/* End of Gallery section  */
+
+/* Event Section */
+
+.event-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.event-container h1 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.event-card {
+    display: flex;
+    background: rgb(238, 236, 236);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    overflow: hidden;
+    flex-direction: row; /* Default to horizontal layout */
+}
+
+.event-date {
+    background: #ac262c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-date h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.event-date p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.event-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.event-details h3 {
+    margin: 0;
+    color: #333;
+}
+
+.event-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+
+    .event-date {
+        text-align: left; /* Align text left */
+    }
+
+    .event-details {
+        padding: 10px; /* Reduce padding */
+    }
+}
+
+/* End of Event Section */
+
+/* Contact section */
+
+/* Main contact container */
+.contact-container {
+    background: #efefef;
+    display: flex; /* Flexbox to align items side by side */
+    justify-content: space-between; /* Space between contact info and map */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%; /* Maximum width of the container */
+    /* Center container horizontally */
+    padding: 60px 60px 60px 60px; /* Padding around the content */
+    gap: 20px; /* Gap between the contact info and map */
+    font-family: "Open Sans", system-ui; /* Font family for text */
+}
+
+/* Contact information styling */
+.contact-info {
+    flex: 1; /* Take up available space */
+    max-width: 40%; /* Limit width to half the container */
+    padding-left: 90px;
+}
+
+/* Contact header styling */
+.contact-info h2 {
+    margin-top: 90px;
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Paragraph styling in contact info */
+.contact-info p {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* Map container styling */
+.contact-map {
+    flex: 1; /* Take up available space */
+    max-width: 60%; /* Limit width to half the container */
+    padding-right: 90px;
+}
+
+/* Map header styling */
+.contact-map h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Responsive map iframe styling */
+.contact-map iframe {
+    width: 100%; /* Responsive width */
+    height: 350px; /* Fixed height */
+    border: 0; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Adjust padding for the entire contact section */
+.contact {
+    margin-top: 20px !important;
+    padding: 50px; /* Reduced padding for better alignment */
+    font-family: "Open Sans", system-ui;
+}
+
+/* End of contact section */
+
+/* Presentation section */
+
+.presentation-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", sans-serif;
+}
+
+.presentation-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.presentation-card {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.presentation-card h2 {
+    color: #ac262c;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.presenter,
+.date {
+    color: #555;
+    font-size: 14px;
+}
+
+.description {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hover Effect */
+.presentation-card:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .presentation-container {
+        padding: 15px;
+    }
+
+    .presentation-card {
+        padding: 15px;
+    }
+}
+
+/* end of  Presentation section */
+
+/* Policy brief section */
+
+.policy-container {
+
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", system-ui;
+}
+
+.policy-container h1 {
+    text-align: center;
+    color: #3826ac;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.policy-section {
+    margin-bottom: 25px;
+}
+
+.policy-section h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.policy-section p,
+.policy-section ul {
+    color: #555;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.policy-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.policy-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Hover Effects for Important Sections */
+.policy-section:hover {
+    background-color: #f9f9f9;
+    border-left: 4px solid #3826ac;
+    padding-left: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .policy-container {
+        padding: 15px;
+    }
+
+    .policy-container h1 {
+        font-size: 24px;
+    }
+
+    .policy-section h2 {
+        font-size: 20px;
+    }
+
+    .policy-section p,
+    .policy-section ul {
+        font-size: 14px;
+    }
+}
+
+/* End of Policy brief section */
+
+/* Dissemination section */
+/* Base Styles */
+/* body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+} */
+
+.dissemination-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", system-ui;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.dissemination-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3826ac;
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.dissemination-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3826ac;
+    padding-bottom: 5px;
+}
+
+/* List Styles */
+.objectives-list,
+.methods-list,
+.audience-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.objectives-list li,
+.methods-list li,
+.audience-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Emphasis on key terms in lists */
+.methods-list li strong,
+.audience-list li strong {
+    color: #3826ac;
+    font-weight: bold;
+}
+
+/* Hover Effects */
+.dissemination-title:hover,
+.dissemination-subtitle:hover {
+    color: #3826ac;
+    cursor: pointer;
+}
+
+objectives-list li:hover,
+.methods-list li:hover,
+.audience-list li:hover {
+    /* color: #666; */
+    cursor: default;
+}
+
+
+/* End of Dissemination section */
+
+/* Working paper section */
+
+.working-paper-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.working-paper-container h1 {
+    text-align: center;
+    color: #000000;
+    /* margin-bottom: 30px; */
+    font-size: 32px;
+}
+
+.paper-card {
+    background-color: #f9f9f9;
+    /* margin-bottom: 20px; */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paper-card h2 {
+    /* color: #ac262c; */
+    font-size: 22px;
+    font-weight: 600;
+    /* margin-bottom: 10px; */
+}
+
+.author,
+.date {
+    font-size: 14px;
+    color: #555;
+}
+
+.summary {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    /* margin-top: 15px; */
+    padding: 10px 20px;
+    background-color: #3e2bcf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #8b1f26;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .working-paper-container {
+        padding: 15px;
+    }
+
+    .working-paper-container h1 {
+        font-size: 28px;
+    }
+
+    .paper-card h2 {
+        font-size: 20px;
+    }
+
+    .summary {
+        font-size: 14px;
+    }
+}
+
+/* End of Working paper section */
+
+/* Footer Styles */
+footer {
+    background-color: #1f5c72; /* Footer background color */
+    padding-top: 30px; /* Existing padding for top */
+    position: relative; /* Relative positioning for child elements */
+}
+
+/* Container for footer content */
+.container-footer {
+    color: rgb(228, 223, 223);
+    font-family: "Open Sans", system-ui;
+    font-size: small;
+    padding-left: 55px;
+    padding-right: 40px;
+    letter-spacing: 0.5px;
+    display: flex; /* Ensure Flexbox is used */
+    justify-content: space-between; /* Space between left-side and right-side sections */
+    align-items: flex-start; /* Align items at the start (top) */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+/* Left side section */
+.left-side {
+    text-align: left; /* Align text to the left */
+    /* padding-right: 30px; */
+}
+
+/* Right side section */
+.right_side {
+    /* padding-right: 30px; */
+    margin-top: 17px;
+}
+
+/* Right side section images */
+.right_side_logo {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    align-items: center; /* Vertically center the images */
+    justify-content: flex-end; /* Align images to the right */
+    margin-left: 254px; /* Space from the left side */
+    padding: 3px; /* Padding around the container */
+    width: 15%; /* Width of the logo container */
+    gap: 18px; /* Space between images */
+}
+
+.right_side_logo img {
+    width: auto; /* Adjust width as needed */
+    height: 50px; /* Set a specific height for images (adjust as needed) */
+}
+
+.right_side p {
+    text-align: right; /* Align text to the right */
+}
+
+/* Logo styles */
+.logo {
+    display: flex; /* Flexbox for side-by-side alignment */
+    align-items: center; /* Vertically center the image and text */
+    padding: 5px; /* Padding around the logo container */
+}
+
+.logo img {
+    width: 15%; /* Set the logo size */
+    margin-right: 5px; /* Space between the image and the text */
+}
+
+.logo h4 {
+    font-size: 0.7rem; /* Font size for the logo text */
+    font-family: "Open Sans", system-ui;
+    color: #46b34a; /* Customize text color */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Footer links and text */
+.container-footer a {
+    color: rgb(228, 223, 223); /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.container-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Middle section with copyright notice */
+.mid {
+    text-align: center; /* Center text alignment */
+    font-size: 0.9rem; /* Adjust font size */
+    background-color: #1f5c72; /* Same background color as the footer for consistency */
+    color: rgb(228, 223, 223); /* Same text color as the rest of the footer */
+    padding: 10px;
+    font-family: "Open Sans", system-ui;
+}
+
+.mid a{
+    color: rgb(228, 223, 223);
+}
+
+/* Horizontal rule styles */
+hr {
+    width: 100%; /* Full width */
+    margin: 20px 0; /* Margin above and below the line */
+    border: 0; /* Remove default border */
+    border-top: 1px solid rgba(255, 255, 255, 0.5); /* Custom border style */
+}
