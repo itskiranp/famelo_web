@@ -1,17 +1,18 @@
 @extends('layout')
 
 @section('content')
-    <div class="data">
+    <div class="data ">
         <div class="data-heading">
-            <h1>Data</h1>
+            <h1>Data F</h1>
         </div>
         <div class="data-page">
+                      
             @foreach ($studies as $study)
                 <div class="data-item">
                     <img src="{{ $study->image }}" alt="{{ $study->title }}">
                     <h2>{{ $study->title }}</h2>
 
-                    <div class="data-links">
+                    <div class="data-links container py-5">
                         <!-- Links generated dynamically by passing the study's slug -->
                         <a href="{{ route('datas', $study->slug) }}">Data</a>
                         <a href="{{ route('codebooks', $study->slug) }}">Codebook</a>
@@ -20,6 +21,7 @@
                     </div>
                 </div>
             @endforeach
+            
         </div>
     </div>
 @endsection
