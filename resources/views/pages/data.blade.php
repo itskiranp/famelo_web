@@ -3,7 +3,7 @@
 @section('content')
     <div class="data ">
         <div class="data-heading">
-            <h1>Data F</h1>
+            <h1>Data</h1>
         </div>
         <div class="data-page">
                       

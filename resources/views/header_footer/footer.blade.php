@@ -14,7 +14,10 @@
             FAMELO | University of Michigan<br>
             Michigan MI 94720-2120<br>
             E-mail: iser.nepal@outlook.com<br>
-            <a href="https://www.facebook.com/isernepalofficial/"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+            <a href="https://www.facebook.com/isernepalofficial/"><i class="fa-brands fa-square-facebook fa-2x mt-2 me-2"></i></a>
+            <a href="https://twitter.com/ISER_Nepal"><i class="fa-brands fa-square-twitter fa-2x me-2"></i></a>
+            
+            <a href="https://www.linkedin.com/company/iser-nepal/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
 
         </div>
 
