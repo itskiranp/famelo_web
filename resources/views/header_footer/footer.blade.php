@@ -32,7 +32,7 @@
                 <br>This project is funded by the University of Michigan.
 
             </p>
-            <p><a href="https://umich.edu/">UCB Privacy Statement <i class="fa fa-external-link"
+            <p><a href="https://umich.edu/">Privacy Statement <i class="fa fa-external-link"
                         aria-hidden="true"></i></a>| <a
                     href="https://dap.berkeley.edu/get-help/report-web-accessibility-issue">Web Accessibility Policy</a>
                 <i class="fa fa-external-link" aria-hidden="true"></i>| Disclaimer

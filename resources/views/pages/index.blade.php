@@ -152,7 +152,7 @@
                 <p>
                     ISER-N | University of Michigan<br>
                     Bharatpur-15, Fulbari, Chitwan, Nepal<br>
-                    977-56-591054 , 977-56-592406<br>
+                    977-56-591054 , 977-56-592407<br>
                     E-mail: iser.nepal@outlook.com
                 </p>
             </div>
